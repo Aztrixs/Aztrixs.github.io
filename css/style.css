@@ -831,15 +831,24 @@ a:hover {
         bottom: 0;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
+        gap: var(--space-xl);
         background: var(--color-bg);
+        padding: var(--nav-height) var(--space-xl);
         opacity: 0;
         visibility: hidden;
+        z-index: 1000;
         transition: opacity var(--transition-base), visibility var(--transition-base);
     }
 
     .nav-menu.active {
         opacity: 1;
         visibility: visible;
+    }
+
+    .nav-menu li {
+        width: 100%;
+        text-align: center;
     }
 
     .nav-menu a {
